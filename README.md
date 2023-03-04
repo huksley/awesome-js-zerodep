@@ -2,6 +2,8 @@
 
 Awesome JavaScript &amp; TypeScript modules which have zero dependencies. Well, almost zero, if it have *1* but really good, list it here.
 
+<img src="https://user-images.githubusercontent.com/1594349/222900004-ff74ea9f-771e-426e-8ced-048cd7803761.png" width="300">
+
 You can check your project for used packages which have zero dependencies with this bash script:
 
 ```bash
