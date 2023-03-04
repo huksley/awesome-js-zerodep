@@ -2,6 +2,13 @@
 
 Awesome JavaScript &amp; TypeScript modules which have zero dependencies.
 
+You can check your project for used packages which have zero dependencies with this bash script:
+
+```bash
+for N in $(npm list --omit peer --omit dev --omit optional --depth 0 --json | jq ".dependencies" | jq 'keys[]' -r); do COUNT=$(cat node_modules/$N/package.json | jq ".dependencies" | jq length); if [ "$COUNT" == "0" ]; then echo $N; fi; done
+```
+
+### React & Web
 
 | npm | source | package | types | dependency count | last update |
 | - | - | - | - | - | - |
